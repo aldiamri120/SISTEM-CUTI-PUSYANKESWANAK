@@ -1,0 +1,16 @@
+CRITICAL - 2021-12-25 11:42:39 --> Attempt to read property "masuk" on array
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\Users\\REDMIB...', 66)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('absen')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2021-12-25 15:51:38 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 68)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('absen')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}

@@ -1,0 +1,66 @@
+CRITICAL - 2021-12-30 18:30:21 --> Undefined variable $data_divisi
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Views\admin\account.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\REDMIB...', 45)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/account', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(115): view('admin/account')
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('my-account')
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2021-12-30 06:02:23 --> Undefined property: App\Controllers\Api::$user
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Api.php(267): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\REDMIB...', 267)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->save('account')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2021-12-30 06:13:34 --> Undefined variable $saveTo
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Api.php(270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\REDMIB...', 270)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->save('account')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+ERROR - 2021-12-30 19:59:28 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2021-12-30 19:59:28 --> Column 'id_user' in where clause is ambiguous
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Pegawai.php(79): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Pegawai->link('permintaan-cuti')
+#8 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#9 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#12 {main}
+ERROR - 2021-12-30 20:00:06 --> Column 'id_user' in where clause is ambiguous
+CRITICAL - 2021-12-30 20:00:06 --> Column 'id_user' in where clause is ambiguous
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Pegawai.php(79): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Pegawai->link('permintaan-cuti')
+#8 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#9 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#12 {main}
+CRITICAL - 2021-12-30 20:11:54 --> Undefined property: App\Controllers\Pegawai::$notFound
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Pegawai.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\REDMIB...', 109)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Pegawai->link('absen2')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}

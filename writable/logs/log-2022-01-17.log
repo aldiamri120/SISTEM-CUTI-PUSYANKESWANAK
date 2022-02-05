@@ -1,0 +1,86 @@
+CRITICAL - 2022-01-17 17:43:03 --> Undefined variable $data_lokasi
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Views\admin\data_admin.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\REDMIB...', 122)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/data_admi...', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(92): view('admin/data_admi...', Array)
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('data-admin')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-17 18:49:18 --> Call to a member function getName() on null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->cuti()
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#5 {main}
+CRITICAL - 2022-01-17 18:50:04 --> Call to a member function getName() on null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->cuti()
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#5 {main}
+CRITICAL - 2022-01-17 18:58:10 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Api.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 173)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->cuti()
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-17 18:58:54 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Api.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 173)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->cuti()
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-17 19:11:59 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Api.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 176)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->cuti()
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-17 19:24:25 --> Undefined variable $data_user
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Views\pegawai\my_account.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\REDMIB...', 31)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('pegawai/my_acco...', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Pegawai.php(55): view('pegawai/my_acco...', Array)
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Pegawai->page('my-account')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-17 19:37:13 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Views\pegawai\my_account.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 31)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('pegawai/my_acco...', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Pegawai.php(56): view('pegawai/my_acco...', Array)
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Pegawai->page('my-account')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-17 19:37:21 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Views\pegawai\my_account.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 31)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('pegawai/my_acco...', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Pegawai.php(56): view('pegawai/my_acco...', Array)
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Pegawai->page('my-account')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}

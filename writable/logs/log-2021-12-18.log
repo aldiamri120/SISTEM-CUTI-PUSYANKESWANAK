@@ -1,0 +1,31 @@
+CRITICAL - 2021-12-18 03:21:06 --> unlink(C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\1564293217.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\Users...', 'C:\\Users\\REDMIB...', 81)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Api.php(81): unlink('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->save('pegawai')
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#7 {main}
+CRITICAL - 2021-12-18 04:38:12 --> Invalid file: admin/data_absensi.php
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/data_abse...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/data_abse...', Array, true)
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(51): view('admin/data_abse...', Array)
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('data-absensi')
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}
+CRITICAL - 2021-12-18 04:40:12 --> Undefined variable $data_pegawai
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Views\admin\absen_pegawai.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\REDMIB...', 89)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/absen_peg...', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(51): view('admin/absen_peg...', Array)
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('data-absensi')
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}

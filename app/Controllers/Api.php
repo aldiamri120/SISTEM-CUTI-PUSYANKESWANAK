@@ -29,6 +29,28 @@ class Api extends BaseController
         $this->lokasikerja = new lokasikerjaModel();
     }
 
+    public function cek_akhir_pengajuan()
+    {
+        $cuti = $this->cuti->find();
+        foreach ($cuti as $c) {
+            $es = $c['tanggal_pengajuan'];
+            $es = strtotime($es);
+            $es = strtotime("+3 day", $es);
+            $e = date("d-m-Y", $es);
+            if ($e == date("d-m-Y")) {
+                if (str_contains($c['verifikator_3'], "Menunggu")) {
+                    $this->cuti->where('id_cuti', $c['id_cuti'])->delete();
+                    $this->notif->where('id_cuti', $c['id_cuti'])->delete();
+                    echo "1";
+                } else {
+                    echo "0";
+                }
+            } else {
+                echo "0";
+            }
+        }
+    }
+
     public function notif()
     {
         // get data from notif model
@@ -194,19 +216,32 @@ class Api extends BaseController
         // Pengawas
         $id_user = $this->session->id_user;
         $lokasi_kerja = $this->pegawai->where('id_user', $id_user)->where('tahun', date('Y'))->first()['lokasi_kerja'];
-
+        $status = 0;
         // Pegawai yang mau diambilin cuti
         $nik = $this->request->getPost('nik');
         $pegawai = $this->pegawai->where('nip', $nik)->where('lokasi_kerja', $lokasi_kerja)->first();
 
         // Cek lokasi kerja pegawai
-        if (empty($pegawai)) {
-            $this->session->setFlashdata('error', 'Maaf, NIK yang Anda masukkan tidak berada di lokasi kerja Anda.');
-            return redirect()->to(base_url('/home/permintaan-cuti-pengawas'));
+        if (!$pegawai) {
+            $status = 3;
+            $data = "";
+        } else {
+            if (empty($pegawai)) {
+                $status = 0;
+                $data = "";
+            } else {
+                $status = 1;
+                $data = $pegawai;
+            }
         }
 
-        $this->session->setFlashdata('pegawai', $pegawai);
-        return redirect()->to(base_url('/home/permintaan-cuti-pengawas'));
+
+        $res = [
+            'status' => $status,
+            'data' => $data
+        ];
+
+        return json_encode($res);
     }
 
     public function cuti()
@@ -280,6 +315,7 @@ class Api extends BaseController
         $jarak_pengambilan_cuti = $jarak_pengambilan_cuti / 60 / 60 / 24;
 
         // cek apakah cuti dilakukan h-7 khusus cuti tahunan
+        // cuti sakit rawat inap potong cuti tahunan
         if ($tipe_cuti == 'tahunan') {
             // cek apakah cuti sudah dialokasikan untuk user ini
             $cek = $this->pegawai->where('id_user', $id_user)->where('tahun', date('Y'))->first();
@@ -292,7 +328,7 @@ class Api extends BaseController
                     return redirect()->to(base_url('/pegawai/pengajuan-cuti'));
                 }
             } else {
-                // cek apakah cuti diajukan h-7 atau tidak
+                // cek apakah cuti tahunan diajukan h-7 atau tidak
                 if ($jarak_pengambilan_cuti < 7) {
                     $this->session->setFlashdata('error', 'Maaf, cuti tahunan anda harus dilakukan h-7');
                     if ($this->session->get('role') == 'admin') {
@@ -306,7 +342,7 @@ class Api extends BaseController
                     // cek sisa cuti tahunan 
                     $sisa_cuti = $this->pegawai->where('id_user', $id_user)->where('tahun', date('Y'))->first()['jatah_cuti_tahunan'] - $cuti_b_hari;
 
-                    if ($sisa_cuti < 0 || $sisa_cuti == 0) {
+                    if ($sisa_cuti < 0 || $sisa_cuti == 0 || $sisa_cuti < $cuti_b_hari) {
                         $this->session->setFlashdata('error', 'Maaf, sisa cuti tahunan anda tidak mencukupi [ Permintaan cuti : ' . $cuti_b_hari . ' Hari ] [ Sisa cuti anda : ' . $this->pegawai->where('id_user', $id_user)->where('tahun', date('Y'))->first()['jatah_cuti_tahunan'] . ' Hari ]');
                         if ($this->session->get('role') == 'admin') {
                             return redirect()->to(base_url('/home/permintaan-cuti-pengawas'));
@@ -325,6 +361,7 @@ class Api extends BaseController
                         }
                         $data = [
                             'id_user' => $id_user,
+                            'tanggal_pengajuan' => $tanggal_pengajuan,
                             'tanggal_awal' => $date_start,
                             'tanggal_akhir' => $date_end,
                             'tipe_cuti' => $tipe_cuti,
@@ -343,10 +380,14 @@ class Api extends BaseController
                         $cek = $this->pegawai->where('id_user', $id_user)->where('tahun', date('Y'))->first();
                         // cek sisa cuti tahunan 
                         $sisa_cuti = $this->pegawai->where('id_user', $id_user)->where('tahun', date('Y'))->first()['jatah_cuti_tahunan'] - $cuti_b_hari;
-
+                        if ($sisa_cuti < 0) {
+                            $sisa_cutiku = 0;
+                        } else {
+                            $sisa_cutiku = $sisa_cuti;
+                        }
                         $data_jatah_cuti = [
                             'id_user' => $id_user,
-                            'jatah_cuti_tahunan' => $sisa_cuti
+                            'jatah_cuti_tahunan' => $sisa_cutiku
                         ];
                         $this->pegawai->save($data_jatah_cuti);
                         // update notif
@@ -383,14 +424,34 @@ class Api extends BaseController
             $my_name = $this->session->get('nama');
             $my_jabatan = $this->session->get('nama_jabatan');
             $my_nip = $this->session->get('nip');
+            // cek ambil cuti berapa hari
+            $start = strtotime($date_start);
+            $end = strtotime($date_end);
+            $jarak = $end - $start;
+            $cuti_b_hari = $jarak / 60 / 60 / 24; // ambil cuti berapa hari ?
+            $sisa_cuti = $this->pegawai->where('id_user', $id_user)->where('tahun', date('Y'))->first()['jatah_cuti_tahunan'] - $cuti_b_hari;
+
+            $data_jatah_cuti = [
+                'id_user' => $id_user,
+                'jatah_cuti_tahunan' => $sisa_cuti
+            ];
+            if ($tipe_cuti == 'sakit rawat inap') {
+                $this->pegawai->save($data_jatah_cuti);
+            }
             // fix jika pengawas mengajukan cuti maka langsung ke level diatasnya
             if ($this->session->nama_jabatan == "pengawas") {
-                $verif = "<span class=\"badge bg-success\">Dilihat oleh</span><span class=\"badge bg-primary text-white\">$my_name</span><span class=\"badge bg-secondary text-white\">$my_jabatan</span><span class=\"badge bg-secondary text-white\" style=\"display:none\">$my_nip</span>";
+                // fix jika cuti diajukan oleh pengawas
+                if ($this->session->id_user == $id_user) {
+                    $verif = "<span class=\"badge bg-success\">Dilihat oleh</span><span class=\"badge bg-primary text-white\">$my_name</span><span class=\"badge bg-secondary text-white\">$my_jabatan</span><span class=\"badge bg-secondary text-white\" style=\"display:none\">$my_nip</span>";
+                } else {
+                    $verif = "<span class=\"badge bg-warning\">Menunggu</span>";
+                }
             } else {
                 $verif = "<span class=\"badge bg-warning\">Menunggu</span>";
             }
             $data = [
                 'id_user' => $id_user,
+                'tanggal_pengajuan' => $tanggal_pengajuan,
                 'tanggal_awal' => $date_start,
                 'tanggal_akhir' => $date_end,
                 'tipe_cuti' => $tipe_cuti,
@@ -425,7 +486,11 @@ class Api extends BaseController
             $this->notif->save($data_notif);
             $this->session->setFlashdata('success', 'Permintaan cuti anda berhasil diajukan');
             if ($this->session->get('role') == 'admin') {
-                return redirect()->to(base_url('/home/permintaan-cuti-anda'));
+                if ($this->session->id_user == $id_user) {
+                    return redirect()->to(base_url('/home/permintaan-cuti-anda'));
+                } else {
+                    return redirect()->to(base_url('/home/permintaan-cuti'));
+                }
             } else {
                 return redirect()->to(base_url('/pegawai'));
             }
@@ -668,7 +733,7 @@ class Api extends BaseController
                         ];
                         return json_encode($data);
                     } else {
-                        if ($status == "1") {
+                        if ($status == "2") {
                             $appr = "<span class=\"badge bg-success\">Dilihat oleh</span><span class=\"badge bg-primary text-white\">$my_name</span><span class=\"badge bg-secondary text-white\">$my_jabatan</span><span class=\"badge bg-secondary text-white\" style=\"display:none\">$my_nip</span>";
                         } else {
                             $appr = "<span class=\"badge bg-danger\">Ditolak oleh</span><span class=\"badge bg-primary text-white\">$my_name</span><span class=\"badge bg-secondary text-white\">$my_jabatan</span><span class=\"badge bg-secondary text-white\" style=\"display:none\">$my_nip</span>";
@@ -782,6 +847,12 @@ class Api extends BaseController
             $lokasi_kerja = $this->request->getPost('lokasi_kerja');
             $foto = $this->request->getFile('foto');
             $ttd = $this->request->getFile('ttd');
+            // cek role apakah ini user atau admin karena di form akun admin tidak ada upload ttd
+            if ($this->session->role == "user") {
+                $p_ttd = $ttd->getName();
+            } else {
+                $p_ttd = ""; // kosongi ini adalah admin
+            }
             $dok = "";
             $ttd_up = "";
             $nama_foto = "";
@@ -814,7 +885,8 @@ class Api extends BaseController
                 $dok = $data_foto2['foto'];
             }
 
-            if ($ttd->getName() != "") {
+
+            if ($p_ttd != "") {
                 if (!$this->validate([
                     'ttd' => [
                         'rules' => 'uploaded[ttd]|mime_in[ttd,image/jpg,image/jpeg,image/gif,image/png]|max_size[ttd,2024]',
@@ -831,7 +903,7 @@ class Api extends BaseController
                     $file_ok = "1";
                     $data_ttd = $ttd;
                     $nama_ttd = rand() . "_" . $data_ttd->getName();
-                    $ttd_up = "/upload/ttd-pegawai/$nama_ttd";
+                    $ttd_up = "/upload/ttd-pegawai/$nama_ttd"; // buat folder ttd pegawai !!
                     if ($file_ok == "1") {
                         $data_ttd->move('upload/ttd-pegawai/', $nama_ttd);
                     }
@@ -841,31 +913,54 @@ class Api extends BaseController
                 $data_ttd2 = $this->pegawai->where("id_user", $id_user)->first();
                 $ttd_up = $data_ttd2['ttd'];
             }
-            if ($password == "") {
-                $data = [
-                    'id_user' => $id_user,
-                    'id_pjlp' => $id_pjlp,
-                    'nama' => $nama,
-                    'nip' => $nip,
-                    'role' => $role,
-                    'id_jabatan' => $jabatan,
-                    'lokasi_kerja' => $lokasi_kerja,
-                    'foto' => $dok,
-                    'ttd' => $ttd_up,
-                ];
+            if ($this->session->role == "user") {
+                if ($password == "") {
+                    $data = [
+                        'id_user' => $id_user,
+                        'id_pjlp' => $id_pjlp,
+                        'nama' => $nama,
+                        'nip' => $nip,
+                        'foto' => $dok,
+                        'ttd' => $ttd_up,
+                    ];
+                } else {
+                    $data = [
+                        'id_user' => $id_user,
+                        'id_pjlp' => $id_pjlp,
+                        'nama' => $nama,
+                        'nip' => $nip,
+                        'password' => sha1($password),
+                        'foto' => $dok,
+                        'ttd' => $ttd_up,
+                    ];
+                }
             } else {
-                $data = [
-                    'id_user' => $id_user,
-                    'id_pjlp' => $id_pjlp,
-                    'nama' => $nama,
-                    'nip' => $nip,
-                    'password' => sha1($password),
-                    'role' => $role,
-                    'id_jabatan' => $jabatan,
-                    'lokasi_kerja' => $lokasi_kerja,
-                    'foto' => $dok,
-                    'ttd' => $ttd_up,
-                ];
+                if ($password == "") {
+                    $data = [
+                        'id_user' => $id_user,
+                        'id_pjlp' => $id_pjlp,
+                        'nama' => $nama,
+                        'nip' => $nip,
+                        'role' => $role,
+                        'id_jabatan' => $jabatan,
+                        'lokasi_kerja' => $lokasi_kerja,
+                        'foto' => $dok,
+                        'ttd' => $ttd_up,
+                    ];
+                } else {
+                    $data = [
+                        'id_user' => $id_user,
+                        'id_pjlp' => $id_pjlp,
+                        'nama' => $nama,
+                        'nip' => $nip,
+                        'password' => sha1($password),
+                        'role' => $role,
+                        'id_jabatan' => $jabatan,
+                        'lokasi_kerja' => $lokasi_kerja,
+                        'foto' => $dok,
+                        'ttd' => $ttd_up,
+                    ];
+                }
             }
 
             if ($this->pegawai->save($data)) {
@@ -873,7 +968,7 @@ class Api extends BaseController
                 $session = session();
                 $session->set('nama', $nama);
                 $session->set('foto', $dok);
-                $session->set('ttd', $ttd_up);
+                $session->set('ttd', $ttd_up); // perbarui juga di login session
                 $session->set('nip', $nip);
                 $session->set('role', $role);
                 $session->set('nama_jabatan', $this->jabatan->where('id_jabatan', $jabatan)->first()['nama_jabatan']);
@@ -978,6 +1073,7 @@ class Api extends BaseController
             $this->session->set('tahun', $this->pegawai->where($data)->first()['tahun']);
             $this->session->set('jatah_cuti_tahunan', $this->pegawai->where($data)->first()['jatah_cuti_tahunan']);
             $this->session->set('foto', $this->pegawai->where($data)->first()['foto']);
+            $this->session->set('ttd', $this->pegawai->where($data)->first()['ttd']);
             $this->session->set('wilayah', $this->pegawai->where($data)->first()['lokasi_kerja']);
 
             // redirect to home page

@@ -1,0 +1,129 @@
+CRITICAL - 2021-12-24 08:19:53 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Model.php on line 723
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Model.php(723): CodeIgniter\Database\BaseBuilder->get('level')
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(18): CodeIgniter\Model->__call('get', Array)
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#7 {main}
+CRITICAL - 2021-12-24 11:34:05 --> Undefined array key "REMOTE_HOST"
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Views\admin\absen.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\REDMIB...', 58)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/absen', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(62): view('admin/absen')
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('absen')
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2021-12-24 11:37:49 --> Undefined array key "HTTP_CLIENT_IP"
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Views\admin\absen.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\REDMIB...', 58)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/absen', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(62): view('admin/absen')
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('absen')
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2021-12-24 21:43:16 --> Attempt to read property "masuk" on null
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\Users\\REDMIB...', 63)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('absen')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2021-12-24 21:43:47 --> Attempt to read property "masuk" on null
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\Users\\REDMIB...', 63)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('absen')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2021-12-24 21:44:20 --> Attempt to read property "masuk" on null
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\Users\\REDMIB...', 63)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('absen')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2021-12-24 21:45:18 --> Attempt to read property "masuk" on null
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\Users\\REDMIB...', 63)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('absen')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2021-12-24 21:45:28 --> Attempt to read property "masuk" on array
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\Users\\REDMIB...', 63)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('absen')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2021-12-24 22:28:20 --> Undefined property: App\Controllers\Api::$absen
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Api.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\REDMIB...', 182)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->absen()
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+ERROR - 2021-12-24 22:30:28 --> Unknown column 'date' in 'where clause'
+CRITICAL - 2021-12-24 22:30:28 --> Unknown column 'date' in 'where clause'
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Api.php(184): CodeIgniter\BaseModel->first()
+#7 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->absen()
+#8 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#9 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#12 {main}
+ERROR - 2021-12-24 22:31:25 --> Column 'masuk' cannot be null
+CRITICAL - 2021-12-24 22:31:25 --> Column 'masuk' cannot be null
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ab...', 0)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ab...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ab...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ab...', Array, false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Api.php(220): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->absen()
+#10 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#11 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#14 {main}
+CRITICAL - 2021-12-24 22:55:49 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Api.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 209)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->absen()
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2021-12-24 22:56:01 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Api.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 209)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->absen()
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}

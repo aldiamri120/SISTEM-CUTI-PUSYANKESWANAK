@@ -1,0 +1,20 @@
+CRITICAL - 2022-01-16 09:01:25 --> Undefined property: App\Controllers\Home::$lokasi_kerja
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\REDMIB...', 76)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('lokasi-kerja')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-16 09:01:45 --> Undefined variable $lokasi_kerja
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Views\admin\lokasi_kerja.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\REDMIB...', 38)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/lokasi_ke...', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(78): view('admin/lokasi_ke...', Array)
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('lokasi-kerja')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}

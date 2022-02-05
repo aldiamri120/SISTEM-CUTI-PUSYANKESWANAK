@@ -1,0 +1,854 @@
+CRITICAL - 2022-01-22 00:01:18 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 00:01:19 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 272
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(272): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 00:04:03 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 272
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(272): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 00:05:10 --> Could not find image file ()
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(250): Mpdf\Image\ImageProcessor->imageError('', true, 'Could not find ...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(265): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:06:32 --> Could not find image file (C:/Users/REDMIBOOK/Desktop/portf/sistemCuti/app//upload/ttd/1567931389_35357051.png)
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(250): Mpdf\Image\ImageProcessor->imageError('C:/Users/REDMIB...', true, 'Could not find ...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('C:/Users/REDMIB...', true, true, ' C:\\Users\\REDMI...', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 507)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 507)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(265): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:07:15 --> Could not find image file ()
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(250): Mpdf\Image\ImageProcessor->imageError('', true, 'Could not find ...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(265): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:07:41 --> Could not find image file ()
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(250): Mpdf\Image\ImageProcessor->imageError('', true, 'Could not find ...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(265): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:08:51 --> Could not find image file ()
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(250): Mpdf\Image\ImageProcessor->imageError('', true, 'Could not find ...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(265): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:09:10 --> Could not find image file (C:/Users/REDMIBOOK/Desktop/portf/sistemCuti/app/../upload/ttd/1567931389_35357051.png)
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(250): Mpdf\Image\ImageProcessor->imageError('C:/Users/REDMIB...', true, 'Could not find ...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('C:/Users/REDMIB...', true, true, 'C:\\Users\\REDMIB...', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 507)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 507)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(265): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:10:37 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 00:11:51 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 00:12:32 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('C:/Users/REDMIB...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('C:/Users/REDMIB...', true, true, 'C:\\Users\\REDMIB...', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 507)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 507)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(266): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:15:29 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 00:27:29 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('http://localhos...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('http://localhos...', true, true, 'http://localhos...', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 507)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 507)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:27:43 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:29:13 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 00:29:14 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:30:26 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 00:35:01 --> Undefined variable $ttd
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Views\admin\pembuatan_surat_cuti2.php(390): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\REDMIB...', 390)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/pembuatan...', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): view('admin/pembuatan...', Array)
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:35:17 --> Error parsing PNG identifier (c5f0f6b7b8b0659cd4bc9a8f574e29ec)
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(438): Mpdf\Image\ImageProcessor->imageError('c5f0f6b7b8b0659...', true, 'Error parsing P...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('c5f0f6b7b8b0659...', true, true, 'data:image/png;...', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 507)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 507)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:36:04 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:36:45 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:37:05 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:38:28 --> Error parsing JPG header (d1b78c2f2ebc01c4f68420c1ab16a64c)
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(312): Mpdf\Image\ImageProcessor->imageError('d1b78c2f2ebc01c...', true, 'Error parsing J...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('d1b78c2f2ebc01c...', true, true, 'data:image/jpeg...', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 507)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 507)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:42:12 --> finfo_file(C:\xampp\tmp\phpEA9.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\x...', 'C:\\Users\\REDMIB...', 109)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Files\File.php(109): finfo_file(Resource id #160, 'C:\\xampp\\tmp\\ph...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Api.php(492): CodeIgniter\Files\File->getMimeType()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->edit('approval-cuti')
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}
+CRITICAL - 2022-01-22 00:42:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 00:42:22 --> finfo_file(C:\xampp\tmp\php35DA.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\x...', 'C:\\Users\\REDMIB...', 109)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Files\File.php(109): finfo_file(Resource id #160, 'C:\\xampp\\tmp\\ph...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Api.php(492): CodeIgniter\Files\File->getMimeType()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->edit('approval-cuti')
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}
+CRITICAL - 2022-01-22 00:42:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 00:44:52 --> finfo_file(C:\xampp\tmp\php7FBC.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\x...', 'C:\\Users\\REDMIB...', 109)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Files\File.php(109): finfo_file(Resource id #160, 'C:\\xampp\\tmp\\ph...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Api.php(493): CodeIgniter\Files\File->getMimeType()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->edit('approval-cuti')
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}
+CRITICAL - 2022-01-22 00:44:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 00:45:57 --> finfo_file(C:\xampp\tmp\php7DA5.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\x...', 'C:\\Users\\REDMIB...', 109)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Files\File.php(109): finfo_file(Resource id #160, 'C:\\xampp\\tmp\\ph...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Api.php(493): CodeIgniter\Files\File->getMimeType()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->edit('approval-cuti')
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}
+CRITICAL - 2022-01-22 00:45:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 00:46:46 --> finfo_file(C:\xampp\tmp\php3E85.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\x...', 'C:\\Users\\REDMIB...', 109)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Files\File.php(109): finfo_file(Resource id #160, 'C:\\xampp\\tmp\\ph...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Api.php(493): CodeIgniter\Files\File->getMimeType()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->edit('approval-cuti')
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}
+CRITICAL - 2022-01-22 00:46:46 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 00:48:45 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:50:26 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:52:03 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:53:09 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 00:57:32 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 00:59:17 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 01:00:34 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 583)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 583)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 01:01:53 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 01:12:53 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 01:13:19 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 505)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 505)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 01:13:41 --> HTTP error: 0
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Image\ImageProcessor.php(235): Mpdf\RemoteContentFetcher->getFileContentsByCurl('')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag\Img.php(276): Mpdf\Image\ImageProcessor->getImage('', true, true, '', false)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Tag.php(240): Mpdf\Tag\Img->open(Array, Array, 505)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\mpdf\mpdf\src\Mpdf.php(13812): Mpdf\Tag->OpenTag('IMG', Array, Array, 505)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(264): Mpdf\Mpdf->WriteHTML(' <div style="fl...')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-22 01:14:04 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:15:57 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:17:28 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 01:19:12 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:19:36 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:19:58 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:20:46 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:22:28 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:24:53 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:27:35 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 01:32:59 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 01:34:20 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 01:34:56 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:35:27 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:36:56 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 01:37:10 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:37:37 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:38:22 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:39:08 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:39:25 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:40:43 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:43:22 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 01:43:23 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:43:33 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:44:46 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 01:44:47 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:45:10 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:45:16 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 01:45:59 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:26:37 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:28:19 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:29:32 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:31:22 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:31:54 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:32:29 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:33:32 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:34:13 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:34:43 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:36:27 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:36:56 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:37:14 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:37:26 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:37:51 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:39:58 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:40:12 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:40:50 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:41:25 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:43:09 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 10:43:39 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php on line 270
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(270): CodeIgniter\HTTP\RedirectResponse->to(NULL)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('36')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-22 03:06:07 --> syntax error, unexpected token "else"
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\REDMIB...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}
+CRITICAL - 2022-01-22 03:06:10 --> syntax error, unexpected token "else"
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\REDMIB...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}
+CRITICAL - 2022-01-22 03:06:13 --> syntax error, unexpected token "else"
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\REDMIB...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}
+CRITICAL - 2022-01-22 03:06:16 --> syntax error, unexpected token "else"
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\REDMIB...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}
+CRITICAL - 2022-01-22 03:06:19 --> syntax error, unexpected token "else"
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\REDMIB...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}
+CRITICAL - 2022-01-22 03:06:22 --> syntax error, unexpected token "else"
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\REDMIB...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}
+CRITICAL - 2022-01-22 03:06:25 --> syntax error, unexpected token "else"
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\REDMIB...')
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#8 {main}

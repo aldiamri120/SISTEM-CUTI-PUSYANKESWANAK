@@ -1,0 +1,39 @@
+CRITICAL - 2021-12-16 06:41:43 --> Undefined variable $count_user_divisi
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Views\admin\home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\REDMIB...', 27)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/home', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(29): view('admin/home', Array)
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2021-12-16 06:44:23 --> Class "App\Models\pegawaisModel" not found
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(801): App\Controllers\Home->__construct()
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#5 {main}
+CRITICAL - 2021-12-16 06:44:55 --> Undefined property: App\Controllers\Home::$pegawais
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\REDMIB...', 18)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2021-12-16 06:45:09 --> Undefined variable $count_total_pegawai
+#0 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Views\admin\home.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\REDMIB...', 18)
+#1 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/home', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\app\Controllers\Home.php(29): view('admin/home', Array)
+#5 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\absensiOnline\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}

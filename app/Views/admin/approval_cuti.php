@@ -110,7 +110,7 @@
                             <label for="" class="form-label">Aksi</label>
                             <!-- select2 -->
 
-                            <?php if (session()->nama_jabatan == "ka pusyankeswannak") : ?>
+                            <?php if (session()->nama_jabatan == "ka pusyankeswannak" || str_contains(session()->nama_jabatan, 'kasubbag')) : ?>
                             <select class="form-select select2" id="aksi">
                                 <option value="2">Approve</option>
                                 <option value="0">Reject</option>

@@ -1,0 +1,186 @@
+CRITICAL - 2022-01-18 18:30:54 --> syntax error, unexpected token "endif"
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('template/admin_...', Array, true)
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/data_admi...', Array, true)
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(95): view('admin/data_admi...', Array)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('data-admin')
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#9 {main}
+CRITICAL - 2022-01-18 18:31:06 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Views\template\admin_template.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\REDMIB...', 223)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('template/admin_...', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/data_admi...', Array, true)
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(95): view('admin/data_admi...', Array)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('data-admin')
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#11 {main}
+ERROR - 2022-01-18 19:33:45 --> Unknown column 'wilayah' in 'where clause'
+CRITICAL - 2022-01-18 19:33:45 --> Unknown column 'wilayah' in 'where clause'
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(114): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->link('permintaan-cuti')
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#12 {main}
+CRITICAL - 2022-01-18 19:59:10 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Api.php(675): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 675)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Api->login()
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 20:17:52 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 51)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->lihatCuti('assets', 'images', 'users', 'avatar-2.jpg')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 20:17:52 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 51)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->lihatCuti('assets', 'images', 'users', 'avatar-4.jpg')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 20:21:26 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 51)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->lihatCuti('assets', 'images', 'users', 'avatar-2.jpg')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 20:21:26 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 51)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->lihatCuti('assets', 'images', 'users', 'avatar-4.jpg')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 20:21:47 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 51)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->lihatCuti('14')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 21:45:08 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 171)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('assets', 'images', 'users', 'avatar-2.jpg')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 21:45:09 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 171)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('assets', 'images', 'users', 'avatar-4.jpg')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 21:49:08 --> Undefined array key "nama_jabatan"
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Views\admin\pembuatan_surat_cuti.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\REDMIB...', 27)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\REDMIB...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/pembuatan...', Array, true)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(177): view('admin/pembuatan...', Array)
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('11')
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#10 {main}
+CRITICAL - 2022-01-18 21:50:05 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 171)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('assets', 'images', 'users', 'avatar-2.jpg')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 21:50:06 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 171)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('assets', 'images', 'users', 'avatar-4.jpg')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 21:52:15 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 171)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('assets', 'images', 'users', 'avatar-2.jpg')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 21:52:15 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 171)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('assets', 'images', 'users', 'avatar-4.jpg')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 21:52:32 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 171)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('assets', 'images', 'users', 'avatar-2.jpg')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 21:52:33 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 171)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('assets', 'images', 'users', 'avatar-4.jpg')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+CRITICAL - 2022-01-18 21:53:10 --> Trying to access array offset on value of type null
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\REDMIB...', 171)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('14')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#6 {main}
+ERROR - 2022-01-18 21:56:09 --> Not unique table/alias: 'permintaan_cuti'
+CRITICAL - 2022-01-18 21:56:09 --> Not unique table/alias: 'permintaan_cuti'
+#0 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\app\Controllers\Home.php(167): CodeIgniter\BaseModel->first()
+#7 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->buatSuratCuti('9')
+#8 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\REDMIBOOK\Desktop\portf\sistemCuti\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\REDMIB...')
+#12 {main}

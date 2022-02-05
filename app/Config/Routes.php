@@ -47,6 +47,7 @@ $routes->post('/api/edit/(:any)', 'Api::edit/$1', ['filter' => 'auth']);
 $routes->post('/api/delete/(:any)', 'Api::delete/$1', ['filter' => 'auth']);
 $routes->post('/api/cuti', 'Api::cuti', ['filter' => 'auth']);
 $routes->get('/api/notif', 'Api::notif', ['filter' => 'auth']);
+$routes->get('/api/cekAkhirPengajuan', 'Api::cek_akhir_pengajuan', ['filter' => 'auth']);
 $routes->post('/api/login', 'Api::login');
 $routes->get('/api/logout', 'Api::logout');
 

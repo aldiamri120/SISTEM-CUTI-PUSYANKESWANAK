@@ -33,7 +33,7 @@ class Home extends BaseController
         if ($this->cekAuth->cek() == 0) {
             return redirect()->to(base_url('/'));
         }
-        if(str_contains($this->session->nama_jabatan, "kasubbag") || str_contains($this->session->nama_jabatan, "pengawas") || str_contains($this->session->nama_jabatan, "pptk") ||str_contains($this->session->nama_jabatan, "kasatlak") ){
+        if (str_contains($this->session->nama_jabatan, "kasubbag") || str_contains($this->session->nama_jabatan, "pengawas") || str_contains($this->session->nama_jabatan, "pptk") || str_contains($this->session->nama_jabatan, "kasatlak")) {
             return redirect()->to(base_url('home/permintaan-cuti'));
         }
         // count total users as pegawai 
@@ -153,7 +153,11 @@ class Home extends BaseController
         } else if ($url == "permintaan-cuti") {
             // join data pegawai dan permintaan cuti
             if ($this->session->wilayah == "semua lokasi") {
-                $data_cuti = $this->cuti->join('user', 'permintaan_cuti.id_user = user.id_user')->join('jabatan', 'jabatan.id_jabatan = user.id_jabatan')->like('approval_2','Menunggu')->find();
+                if ($this->session->nama_jabatan == "pengawas") {
+                    $data_cuti = $this->cuti->join('user', 'permintaan_cuti.id_user = user.id_user')->join('jabatan', 'jabatan.id_jabatan = user.id_jabatan')->whereNotIn('jabatan.nama_jabatan', [$this->session->nama_jabatan])->like('approval_2', 'menunggu')->find();
+                } else {
+                    $data_cuti = $this->cuti->join('user', 'permintaan_cuti.id_user = user.id_user')->join('jabatan', 'jabatan.id_jabatan = user.id_jabatan')->like('approval_2', 'menunggu')->find();
+                }
             } else {
                 if ($this->session->nama_jabatan == "pengawas") {
                     $data_cuti = $this->cuti->join('user', 'permintaan_cuti.id_user = user.id_user')->join('jabatan', 'jabatan.id_jabatan = user.id_jabatan')->where('lokasi_kerja', $this->session->wilayah)->whereNotIn('jabatan.nama_jabatan', [$this->session->nama_jabatan])->like('approval_2', 'menunggu')->find();
@@ -288,10 +292,10 @@ class Home extends BaseController
                     'nomor_cuti' => $n_cuti + 1,
                 ];
                 $this->nomorCuti->save($data_n);
-                //return view('admin/pembuatan_surat_cuti2', $get);
+                // return view('admin/pembuatan_surat_cuti2', $get);
                 //return redirect()->to($mpdf->Output('cuti.pdf', 'I'));
                 $mpdf->Output('upload/surat_cuti/' . 'Surat_Cuti_' . $n_cuti . '_' . date("d_m_y") . '.pdf', 'F'); // save pdf
-                //simpan ke database
+                // simpan ke database
                 $simpan_cuti = [
                     'id_cuti' => $id,
                     'surat_cuti' => '/upload/surat_cuti/' . 'Surat_Cuti_' . $n_cuti . '_' . date("d_m_y") . '.pdf',

@@ -29,11 +29,13 @@
     <link href="/assets/css/app-modern-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
 
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
 
-<body data-layout="detached" data-layout-config='{"leftSidebarCondensed":false,"darkMode":false, "showRightSidebarOnStart": false}'>
+<body data-layout="detached"
+    data-layout-config='{"leftSidebarCondensed":false,"darkMode":false, "showRightSidebarOnStart": false}'>
 
     <!-- Topbar Start -->
     <div class="navbar-custom topnav-navbar topnav-navbar-dark">
@@ -95,7 +97,8 @@
                 <!-- </div>
                 </li> -->
                 <li class="dropdown notification-list">
-                    <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" id="topbar-userdrop" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown"
+                        id="topbar-userdrop" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         <div class="row">
                             <div class="col">
                                 <span class="account-user-avatar">
@@ -115,7 +118,8 @@
 
                     </a>
 
-                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown" aria-labelledby="topbar-userdrop">
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown"
+                        aria-labelledby="topbar-userdrop">
                         <!-- item-->
                         <div class=" dropdown-header noti-title">
                             <h6 class="text-overflow m-0">Welcome !</h6>
@@ -160,7 +164,8 @@
 
                 <div class="leftbar-user">
                     <a href="javascript: void(0);">
-                        <img src="/assets/images/logo-jkt.png" alt="user-image" height="42" class="img-fluid avatar-lg shadow-sm">
+                        <img src="/assets/images/logo-jkt.png" alt="user-image" height="42"
+                            class="img-fluid avatar-lg shadow-sm">
                         <!-- session name -->
 
                         <span class="leftbar-user-name"></span>
@@ -232,7 +237,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <script>
-                                    document.write(new Date().getFullYear())
+                                document.write(new Date().getFullYear())
                                 </script> © PUSYANKESWANAK
                             </div>
                         </div>
@@ -259,6 +264,7 @@
     <!-- bundle -->
     <script src="/assets/js/vendor.min.js"></script>
     <script src="/assets/js/app.min.js"></script>
+    <script src="/assets/js/akhirPengajuan.js"></script>
 
     <!-- third party js -->
     <script src="/assets/js/vendor/apexcharts.min.js"></script>

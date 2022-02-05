@@ -27,6 +27,7 @@
                                 </thead>
                                 <tbody>
                                     <?php foreach ($data_cuti as $d) : ?>
+                                    <?php if ((str_contains(session()->nama_jabatan, 'pengawas') and str_contains($d['verifikator_1'], "Menunggu")) || (str_contains(session()->nama_jabatan, 'kasatlak') and str_contains($d['verifikator_2'], "Menunggu")) || (str_contains(session()->nama_jabatan, 'pptk') and str_contains($d['verifikator_3'], "Menunggu")) || (str_contains(session()->nama_jabatan, 'kasubbag') and str_contains($d['approval_1'], "Menunggu")) || (str_contains(session()->nama_jabatan, 'ka pusyankeswannak') and str_contains($d['approval_2'], "Menunggu")) || str_contains(session()->role, 'master admin')) : ?>
                                     <tr>
                                         <td><?= $d['nip'] ?></td>
                                         <td><?= strtoupper($d['nama']) ?></td>
@@ -43,6 +44,7 @@
                                             </div>
                                         </td>
                                     </tr>
+                                    <?php endif; ?>
                                     <?php endforeach; ?>
 
                                 </tbody>

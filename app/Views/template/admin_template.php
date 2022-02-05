@@ -29,7 +29,8 @@
     <link href="/assets/css/app-modern-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
 
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/buttons/2.1.0/js/dataTables.buttons.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
@@ -56,11 +57,13 @@
             </a>
             <ul class="list-unstyled topbar-menu float-end mb-0">
                 <li class="dropdown notification-list">
-                    <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" id="topbar-notifydrop" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#"
+                        id="topbar-notifydrop" role="button" aria-haspopup="true" aria-expanded="false">
                         <i class="dripicons-bell noti-icon"></i>
                         <span id="tanda" class="noti-icon-badge" style="display:none"></span>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg" aria-labelledby="topbar-notifydrop">
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg"
+                        aria-labelledby="topbar-notifydrop">
 
                         <!-- item-->
                         <div class="dropdown-item noti-title">
@@ -87,7 +90,8 @@
                     </div>
                 </li>
                 <li class="dropdown notification-list">
-                    <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" id="topbar-userdrop" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown"
+                        id="topbar-userdrop" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         <div class="row">
                             <div class="col">
                                 <span class="account-user-avatar">
@@ -107,7 +111,8 @@
 
                     </a>
 
-                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown" aria-labelledby="topbar-userdrop">
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown"
+                        aria-labelledby="topbar-userdrop">
                         <!-- item-->
                         <div class=" dropdown-header noti-title">
                             <h6 class="text-overflow m-0">Welcome !</h6>
@@ -152,7 +157,8 @@
 
                 <div class="leftbar-user">
                     <a href="javascript: void(0);">
-                        <img src="/assets/images/logo-jkt.png" alt="user-image" height="42" class="img-fluid avatar-lg shadow-sm">
+                        <img src="/assets/images/logo-jkt.png" alt="user-image" height="42"
+                            class="img-fluid avatar-lg shadow-sm">
                         <!-- session name -->
 
                         <span class="leftbar-user-name"></span>
@@ -167,38 +173,38 @@
                     <?php if (str_contains(session()->nama_jabatan, "kasubbag") || str_contains(session()->nama_jabatan, "pengawas") || str_contains(session()->nama_jabatan, "pptk") || str_contains(session()->nama_jabatan, "kasatlak")) : ?>
 
                     <?php else : ?>
-                        <li class="side-nav-item">
-                            <a href="/home" class="side-nav-link">
-                                <i class="uil-home-alt"></i>
-                                <span> Home</span>
-                            </a>
-                        </li>
+                    <li class="side-nav-item">
+                        <a href="/home" class="side-nav-link">
+                            <i class="uil-home-alt"></i>
+                            <span> Home</span>
+                        </a>
+                    </li>
                     <?php endif; ?>
                     <?php if (session()->role == 'master admin') : ?>
-                        <li class="side-nav-item">
-                            <a href="/home/data-pegawai" class="side-nav-link">
-                                <i class="uil-user-circle"></i>
-                                <span> Data Pegawai</span>
-                            </a>
-                        </li>
-                        <li class="side-nav-item">
-                            <a href="/home/data-admin" class="side-nav-link">
-                                <i class="uil-user-circle"></i>
-                                <span> Data Admin</span>
-                            </a>
-                        </li>
-                        <li class="side-nav-item">
-                            <a href="/home/jabatan" class="side-nav-link">
-                                <i class="mdi mdi-account-hard-hat"></i>
-                                <span> Jabatan</span>
-                            </a>
-                        </li>
-                        <li class="side-nav-item">
-                            <a href="/home/lokasi-kerja" class="side-nav-link">
-                                <i class="uil-building"></i>
-                                <span> Data Lokasi Kerja</span>
-                            </a>
-                        </li>
+                    <li class="side-nav-item">
+                        <a href="/home/data-pegawai" class="side-nav-link">
+                            <i class="uil-user-circle"></i>
+                            <span> Data Pegawai</span>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="/home/data-admin" class="side-nav-link">
+                            <i class="uil-user-circle"></i>
+                            <span> Data Admin</span>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="/home/jabatan" class="side-nav-link">
+                            <i class="mdi mdi-account-hard-hat"></i>
+                            <span> Jabatan</span>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="/home/lokasi-kerja" class="side-nav-link">
+                            <i class="uil-building"></i>
+                            <span> Data Lokasi Kerja</span>
+                        </a>
+                    </li>
                     <?php endif; ?>
 
                     <li class="side-nav-item">
@@ -209,32 +215,33 @@
                     </li>
                     <?php if (str_contains(session()->role, 'admin') and session()->nama_jabatan == 'pengawas') : ?>
 
-                        <li class="side-nav-item">
-                            <a href="/home/permintaan-cuti-anda" class="side-nav-link">
-                                <i class="uil-book-open"></i>
-                                <span> Data Cuti Anda</span>
-                            </a>
-                        </li>
-                        <li class="side-nav-item">
-                            <a href="/home/permintaan-cuti-pengawas" class="side-nav-link">
-                                <i class="uil-book-open"></i>
-                                <span> Ajukan Cuti</span>
-                            </a>
-                        </li>
+                    <li class="side-nav-item">
+                        <a href="/home/permintaan-cuti-anda" class="side-nav-link">
+                            <i class="uil-book-open"></i>
+                            <span> Data Cuti Anda</span>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="/home/permintaan-cuti-pengawas" class="side-nav-link">
+                            <i class="uil-book-open"></i>
+                            <span> Ajukan Cuti</span>
+                        </a>
+                    </li>
                     <?php endif; ?>
-                    <?php if (session()->nama_jabatan == 'pengawas' || session()->nama_jabatan == 'ka pusyankeswannak' || str_contains(session()->role, 'master admin')) : ?>
-                        <li class="side-nav-item">
-                            <a href="/home/cuti-disetujui" class="side-nav-link">
-                                <i class="mdi mdi-book-plus-multiple-outline"></i>
-                                <span> Cuti Disetujui</span>
-                            </a>
-                        </li>
-                        <li class="side-nav-item">
-                            <a href="/home/cuti-ditolak" class="side-nav-link">
-                                <i class="mdi mdi-book-remove-multiple-outline"></i>
-                                <span> Cuti Ditolak</span>
-                            </a>
-                        </li>
+                    <!-- tambahkan tampilan pada kasubbag seperti KA -->
+                    <?php if (session()->nama_jabatan == 'pengawas' || session()->nama_jabatan == 'ka pusyankeswannak' || str_contains(session()->role, 'master admin') || str_contains(session()->nama_jabatan, 'kasubbag')) : ?>
+                    <li class="side-nav-item">
+                        <a href="/home/cuti-disetujui" class="side-nav-link">
+                            <i class="mdi mdi-book-plus-multiple-outline"></i>
+                            <span> Cuti Disetujui</span>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="/home/cuti-ditolak" class="side-nav-link">
+                            <i class="mdi mdi-book-remove-multiple-outline"></i>
+                            <span> Cuti Ditolak</span>
+                        </a>
+                    </li>
                     <?php endif; ?>
                     <li class="side-nav-title side-nav-item">Dokumentasi</li>
                     <li class="side-nav-item">
@@ -267,7 +274,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <script>
-                                    document.write(new Date().getFullYear())
+                                document.write(new Date().getFullYear())
                                 </script> © PUSYANKESWANAK
                             </div>
                         </div>
@@ -291,6 +298,7 @@
     <!-- jstree js -->
     <script src="/assets/js/vendor/jstree.min.js"></script>
     <script src="/assets/js/notif.js"></script>
+    <script src="/assets/js/akhirPengajuan.js"></script>
     <script src="/assets/js/pages/demo.jstree.js"></script>
     <!-- bundle -->
     <script src="/assets/js/vendor.min.js"></script>

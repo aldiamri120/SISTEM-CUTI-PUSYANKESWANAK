@@ -101,6 +101,7 @@
                             <label for="nama">Foto</label>
                             <input type="file" class="form-control" id="foto_edit" name="foto">
                         </div>
+
                         <input type="hidden" id="id_user_edit" name="id_user" value="<?= $data_user['id_user'] ?>">
                     </div>
                     <div class="modal-footer">

@@ -14,7 +14,7 @@ class cutiModel extends Model
     protected $returnType           = 'array';
     protected $useSoftDeletes       = false;
     protected $protectFields        = true;
-    protected $allowedFields        = ['id_user', 'tanggal_awal', 'tanggal_akhir', 'tipe_cuti', 'alasan_cuti', 'dokumen', 'verifikator_1', 'verifikator_2', 'verifikator_3', 'approval_1', 'approval_2', 'surat_cuti', 'ttd_1', 'ttd_2', 'ttd_3', 'ttd_4', 'ttd_5'];
+    protected $allowedFields        = ['id_user', 'tanggal_pengajuan', 'tanggal_awal', 'tanggal_akhir', 'tipe_cuti', 'alasan_cuti', 'dokumen', 'verifikator_1', 'verifikator_2', 'verifikator_3', 'approval_1', 'approval_2', 'surat_cuti', 'ttd_1', 'ttd_2', 'ttd_3', 'ttd_4', 'ttd_5'];
 
     // Dates
     protected $useTimestamps        = false;
