@@ -380,7 +380,7 @@ class Api extends BaseController
                         $cek = $this->pegawai->where('id_user', $id_user)->where('tahun', date('Y'))->first();
                         // cek sisa cuti tahunan 
                         $sisa_cuti = $this->pegawai->where('id_user', $id_user)->where('tahun', date('Y'))->first()['jatah_cuti_tahunan'] - $cuti_b_hari;
-                        if ($sisa_cuti < 0) {
+                        if ($sisa_cuti < 0 || $sisa_cuti == 0) {
                             $sisa_cutiku = 0;
                         } else {
                             $sisa_cutiku = $sisa_cuti;
